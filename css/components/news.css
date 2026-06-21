@@ -1,0 +1,18 @@
+.news-feed {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+}
+
+.news-card img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: var(--radius-md);
+
+}

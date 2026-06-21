@@ -1,0 +1,22 @@
+@import url("./utils/reset.css");
+
+@import url("./theme/colors.css");
+@import url("./theme/typography.css");
+@import url("./theme/spacing.css");
+
+@import url("./components/hero.css");
+@import url("./components/navbar.css");
+@import url("./components/news.css");
+@import url("./components/social-links.css");
+@import url("./components/footer.css");
+
+@import url("./layouts/desktop.css");
+@import url("./layouts/tablett.css");
+@import url("./layouts/mobile.css");
+
+@import url("./utils/helpers.css");
+@import url("./utils/animations.css");
+
+.bg-banana {
+    background-color: var(--clr-banana-background);
+}

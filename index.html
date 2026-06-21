@@ -1,37 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lottie Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Lottie Player -->
-  <script
-    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
-  </script>
+    <title>Your Studio Name</title>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f5f5f5;
-    }
-  </style>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
+
+    <script src="./js/lottie.js" defer></script>
 </head>
 
 <body>
 
-  <lottie-player
-    src="./Bananus_Sunglasses.json"
-    background="transparent"
-    speed="1"
-    style="width: 500px; height: 500px;"
-    loop
-    autoplay>
-  </lottie-player>
+    <!-- =========================
+     HERO
+========================== -->
+
+    <header class="hero">
+
+        <img src="assets/img/banner.png" alt="Studio Banner" class="hero-banner">
+
+        <div class="hero-overlay">
+
+            <lottie-player id="bananusAnim" src="./assets/lottie/bananus_sungalsses.json" background="transparent"
+                speed="1" autoplay>
+            </lottie-player>
+
+            <h1 class="hero-title">
+                Schokobanana Studios
+            </h1>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <a href="./index.html">Home</a>
+
+        <a href="./games/index.html">Games</a>
+
+        <a href="./links/index.html">Links</a>
+
+    </nav>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="content" style="background-color: var(--clr-banana-background);">
+
+        <!-- =========================
+     NEWS
+========================== -->
+
+        <section class="news-feed">
+
+            <h2>Latest News</h2>
+
+            <a href="./games/game1/updates/demo-release.html" class="news-card news-card--featured hover-scale">
+
+                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+
+            </a>
+
+            <a href="./games/game1/updates/steam-page.html" class="news-card hover-scale">
+
+                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+
+            </a>
+
+            <a href="./games/game2/updates/trailer.html" class="news-card hover-scale">
+
+                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+
+            </a>
+
+        </section>
+
+        <!-- =========================
+     SOCIAL LINKS
+========================== -->
+
+        <aside class="social-links">
+
+            <a id="discordLink" href="https://discord.gg/pjwB3BZM4F" target="_blank" rel="noopener noreferrer">
+
+                <lottie-player id="discordAnim" src="./assets/lottie/links/discord-in.json" background="transparent"
+                    speed="1">
+                </lottie-player>
+
+            </a>
+
+            <a id="youtubeLink" href="https://www.youtube.com/@Schokobanana-Studios" target="_blank"
+                rel="noopener noreferrer">
+
+                <lottie-player id="youtubeAnim" src="./assets/lottie/links/youtube-in.json" background="transparent"
+                    speed="1">
+                </lottie-player>
+
+            </a>
+
+            <a id="itchioLink" href="https://schokobanana-studios.itch.io/" target="_blank"
+                rel="noopener noreferrer">
+
+                <lottie-player id="itchioAnim" src="./assets/lottie/links/itchio-in.json" background="transparent"
+                    speed="1">
+                </lottie-player>
+
+            </a>
+        </aside>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Your Studio Name
+        </p>
+
+    </footer>
 
 </body>
+
 </html>

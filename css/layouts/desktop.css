@@ -1,0 +1,14 @@
+.content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 220px;
+    gap: 2rem;
+
+   width: 100%;
+
+    margin: auto;
+
+    padding: 2rem;
+
+}

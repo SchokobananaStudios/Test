@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+
+    .hero {
+
+        height: 220px;
+
+    }
+
+    .hero-title {
+
+        font-size: 2rem;
+
+    }
+
+    .navbar {
+
+        flex-wrap: wrap;
+
+        gap: 1rem;
+
+    }
+
+    .content {
+
+        padding: 1rem;
+
+    }
+
+}
