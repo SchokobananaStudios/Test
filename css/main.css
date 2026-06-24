@@ -9,6 +9,10 @@
 @import url("./components/news.css");
 @import url("./components/social-links.css");
 @import url("./components/footer.css");
+@import url("./components/games-grid.css");
+@import url("./components/game-card.css");
+@import url("./components/game-status.css");
+@import url("./components/error-page.css"); 
 
 @import url("./layouts/desktop.css");
 @import url("./layouts/tablett.css");
@@ -18,5 +22,5 @@
 @import url("./utils/animations.css");
 
 .bg-banana {
-    background-color: var(--clr-banana-background);
+    background-color: var(--clr-sky);
 }

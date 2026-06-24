@@ -1,18 +1,25 @@
 :root {
 
-    --clr-banana-background: #cee7ff;
+    --clr-sky: #cee7ff;
     --clr-black: #000000;
+    --clr-white: #ffffff;
 
     --clr-secondary: #4488aa;
 
     --clr-text: #222222;
     --clr-text-light: #ffffff;
 
-    --clr-footer: #d8d8d8;
+    --clr-dark-grey: #1d1d1d;
+    --clr-light-grey: #bdbdbd;
 
-    --banana-yellow1: #FBDA3F;
-    --banana-yellow2: #EBB824;
-    --outline-brown: #4F2902;
-    --detail-brown: #683C11;
+    --clr-banana-yellow1: #FBDA3F;
+    --clr-banana-yellow2: #EBB824;
+    --clr-outline-brown: #4F2902;
+    --clr-detail-brown: #683C11;
 
+
+    --clr-toa-grey: #47403B;
+    --clr-toa-yellow: #F4A70D;
+
+    --clr-skull-knight-green: #32CD32;
 }

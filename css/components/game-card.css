@@ -1,0 +1,37 @@
+.game-card {
+
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    color: var(--clr-text);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+.game-card img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+.game-card-content {
+
+    padding: var(--space-lg);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-sm);
+
+}

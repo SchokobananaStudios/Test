@@ -26,4 +26,24 @@
 
     }
 
+    .hero-title {
+        position: absolute;
+
+        z-index: 3;
+
+        bottom: 20px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: var(--clr-banana-yellow1);
+
+        font-family: var(--font-body);
+        font-size: clamp(var(--fs-lg), 7vw, var(--fs-xxl));
+
+        white-space: nowrap;
+
+        -webkit-text-stroke: 0px var(--clr-outline-brown);
+    }
+
 }

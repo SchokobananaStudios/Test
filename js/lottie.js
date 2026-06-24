@@ -1,3 +1,4 @@
+
 const bananusPlayer = document.getElementById("bananusAnim");
 const discordPlayer = document.getElementById("discordAnim");
 const youtubePlayer = document.getElementById("youtubeAnim");
@@ -11,63 +12,66 @@ loadAllAnimations();
 
 
 // Discord
-discordLink.addEventListener("mouseenter", () => {
-    discordPlayer.load(animations.discordIn);
 
-    discordPlayer.addEventListener("ready", () => {
-        discordPlayer.stop();
-        discordPlayer.play();
-    }, { once: true });
-});
+if (discordLink && youtubeLink && itchioLink) {
+    discordLink.addEventListener("mouseenter", () => {
+        discordPlayer.load(animations.discordIn);
 
-discordLink.addEventListener("mouseleave", () => {
-    discordPlayer.load(animations.discordOut);
+        discordPlayer.addEventListener("ready", () => {
+            discordPlayer.stop();
+            discordPlayer.play();
+        }, { once: true });
+    });
 
-    discordPlayer.addEventListener("ready", () => {
-        discordPlayer.stop();
-        discordPlayer.play();
-    }, { once: true });
-});
+    discordLink.addEventListener("mouseleave", () => {
+        discordPlayer.load(animations.discordOut);
 
-
-// YouTube
-youtubeLink.addEventListener("mouseenter", () => {
-    youtubePlayer.load(animations.youtubeIn);
-
-    youtubePlayer.addEventListener("ready", () => {
-        youtubePlayer.stop();
-        youtubePlayer.play();
-    }, { once: true });
-});
-
-youtubeLink.addEventListener("mouseleave", () => {
-    youtubePlayer.load(animations.youtubeOut);
-
-    youtubePlayer.addEventListener("ready", () => {
-        youtubePlayer.stop();
-        youtubePlayer.play();
-    }, { once: true });
-});
+        discordPlayer.addEventListener("ready", () => {
+            discordPlayer.stop();
+            discordPlayer.play();
+        }, { once: true });
+    });
 
 
-// Itchio
-itchioLink.addEventListener("mouseenter", () => {
-    itchioPlayer.load(animations.itchioIn);
+    // YouTube
+    youtubeLink.addEventListener("mouseenter", () => {
+        youtubePlayer.load(animations.youtubeIn);
 
-    itchioPlayer.addEventListener("ready", () => {
-        itchioPlayer.stop();
-        itchioPlayer.play();
-    }, { once: true });
-});
+        youtubePlayer.addEventListener("ready", () => {
+            youtubePlayer.stop();
+            youtubePlayer.play();
+        }, { once: true });
+    });
 
-itchioLink.addEventListener("mouseleave", () => {
-    itchioPlayer.load(animations.itchioOut);
+    youtubeLink.addEventListener("mouseleave", () => {
+        youtubePlayer.load(animations.youtubeOut);
 
-    itchioPlayer.addEventListener("ready", () => {
-        itchioPlayer.stop();
-        itchioPlayer.play();
-    }, { once: true });
-});
+        youtubePlayer.addEventListener("ready", () => {
+            youtubePlayer.stop();
+            youtubePlayer.play();
+        }, { once: true });
+    });
+
+
+    // Itchio
+    itchioLink.addEventListener("mouseenter", () => {
+        itchioPlayer.load(animations.itchioIn);
+
+        itchioPlayer.addEventListener("ready", () => {
+            itchioPlayer.stop();
+            itchioPlayer.play();
+        }, { once: true });
+    });
+
+    itchioLink.addEventListener("mouseleave", () => {
+        itchioPlayer.load(animations.itchioOut);
+
+        itchioPlayer.addEventListener("ready", () => {
+            itchioPlayer.stop();
+            itchioPlayer.play();
+        }, { once: true });
+    });
+}
 
 loadBananusAnimationEveryMinute();
 
@@ -98,20 +102,20 @@ function getRandomBananusAnimation() {
 
 async function loadAllAnimations() {
     await Promise.all([
-        fetch("./assets/lottie/bananus_drink.json").then(r => r.json()).then(j => animations.bananusDrink = j),
-        fetch("./assets/lottie/bananus_peace.json").then(r => r.json()).then(j => animations.bananusPeace = j),
-        fetch("./assets/lottie/bananus_sungalsses.json").then(r => r.json()).then(j => animations.bananusSunglasses = j),
-        fetch("./assets/lottie/bananus_thumbsup.json").then(r => r.json()).then(j => animations.bananusThumbsup = j),
-        fetch("./assets/lottie/bananus_balance.json").then(r => r.json()).then(j => animations.bananusBalance = j),
+        fetch(`${LOTTIE_PATH}bananus/bananus_drink.json`).then(r => r.json()).then(j => animations.bananusDrink = j),
+        fetch(`${LOTTIE_PATH}bananus/bananus_peace.json`).then(r => r.json()).then(j => animations.bananusPeace = j),
+        fetch(`${LOTTIE_PATH}bananus/bananus_sunglasses.json`).then(r => r.json()).then(j => animations.bananusSunglasses = j),
+        fetch(`${LOTTIE_PATH}bananus/bananus_thumbsup.json`).then(r => r.json()).then(j => animations.bananusThumbsup = j),
+        fetch(`${LOTTIE_PATH}bananus/bananus_balance.json`).then(r => r.json()).then(j => animations.bananusBalance = j),
 
-        fetch("./assets/lottie/links/discord-in.json").then(r => r.json()).then(j => animations.discordIn = j),
-        fetch("./assets/lottie/links/discord-out.json").then(r => r.json()).then(j => animations.discordOut = j),
+        fetch(`${LOTTIE_PATH}links/discord-in.json`).then(r => r.json()).then(j => animations.discordIn = j),
+        fetch(`${LOTTIE_PATH}links/discord-out.json`).then(r => r.json()).then(j => animations.discordOut = j),
 
-        fetch("./assets/lottie/links/youtube-in.json").then(r => r.json()).then(j => animations.youtubeIn = j),
-        fetch("./assets/lottie/links/youtube-out.json").then(r => r.json()).then(j => animations.youtubeOut = j),
+        fetch(`${LOTTIE_PATH}links/youtube-in.json`).then(r => r.json()).then(j => animations.youtubeIn = j),
+        fetch(`${LOTTIE_PATH}links/youtube-out.json`).then(r => r.json()).then(j => animations.youtubeOut = j),
 
-        fetch("./assets/lottie/links/itchio-in.json").then(r => r.json()).then(j => animations.itchioIn = j),
-        fetch("./assets/lottie/links/itchio-out.json").then(r => r.json()).then(j => animations.itchioOut = j),
+        fetch(`${LOTTIE_PATH}links/itchio-in.json`).then(r => r.json()).then(j => animations.itchioIn = j),
+        fetch(`${LOTTIE_PATH}links/itchio-out.json`).then(r => r.json()).then(j => animations.itchioOut = j),
 
     ]);
 }

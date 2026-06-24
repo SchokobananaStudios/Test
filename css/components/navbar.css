@@ -5,12 +5,13 @@
 
     display: flex;
     justify-content: center;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
 
     padding: var(--space-md);
 
-    background: var(--clr-black);
+    background: var(--clr-banana-yellow1);
 
+    border-bottom: 2px solid var(--clr-black);
     z-index: 100;
 
 }
@@ -18,9 +19,14 @@
 .navbar a {
 
     color: var(--clr-text-light);
-
     text-decoration: none;
-
     font-weight: 600;
 
+    text-align: center;
+    background: var(--clr-black);
+
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+
+    min-width: 10%;
 }

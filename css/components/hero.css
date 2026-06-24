@@ -41,12 +41,12 @@
     left: 50%;
     transform: translateX(-50%);
 
-    color: var(--banana-yellow1);
+    color: var(--clr-banana-yellow1);
 
     font-family: var(--font-heading);
     font-size: clamp(var(--fs-lg), 7vw, var(--fs-xxl));
 
     white-space: nowrap;
 
-    -webkit-text-stroke: 4px var(--outline-brown);
+    -webkit-text-stroke: 4px var(--clr-outline-brown);
 }

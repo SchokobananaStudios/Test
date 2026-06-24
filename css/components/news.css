@@ -2,15 +2,29 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    gap: var(--space-md);
+    gap: var(--space-xl);
+
+}
+
+.news-card {
+
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
 
 }
 
 .news-card img {
 
     width: 100%;
-
     display: block;
 
     border-radius: var(--radius-md);

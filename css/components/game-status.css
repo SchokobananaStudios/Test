@@ -1,0 +1,43 @@
+.status {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: .35rem .8rem;
+
+    border-radius: 999px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+}
+
+.status.released {
+
+    background: #4CAF50;
+    color: white;
+
+}
+
+.status.development {
+
+    background: #FFC107;
+    color: black;
+
+}
+
+.status.prototype {
+
+    background: #2196F3;
+    color: white;
+
+}
+
+.status.archived {
+
+    background: #9E9E9E;
+    color: white;
+
+}

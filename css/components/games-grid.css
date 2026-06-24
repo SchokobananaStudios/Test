@@ -1,0 +1,21 @@
+.games-page {
+
+    width: min(1400px, 100%);
+
+    margin-inline: auto;
+
+    padding: var(--space-xl);
+
+}
+
+.games-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+
+}

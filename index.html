@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
+    <script src="./js/main.js" defer></script>
     <script src="./js/lottie.js" defer></script>
 </head>
 
@@ -28,7 +29,7 @@
 
         <div class="hero-overlay">
 
-            <lottie-player id="bananusAnim" src="./assets/lottie/bananus_sungalsses.json" background="transparent"
+            <lottie-player id="bananusAnim" src="./assets/lottie/bananus/bananus_sunglasses.json" background="transparent"
                 speed="1" autoplay>
             </lottie-player>
 
@@ -48,7 +49,7 @@
 
         <a href="./index.html">Home</a>
 
-        <a href="./games/index.html">Games</a>
+        <a href="html/games/games.html">Games</a>
 
         <a href="./links/index.html">Links</a>
 
@@ -58,7 +59,7 @@
          MAIN CONTENT
     ========================== -->
 
-    <main class="content" style="background-color: var(--clr-banana-background);">
+    <main class="content" style="background-color: var(--clr-sky);">
 
         <!-- =========================
      NEWS
@@ -66,26 +67,29 @@
 
         <section class="news-feed">
 
-            <h2>Latest News</h2>
+            <a href="./games/game1/updates/steam-page.html" class="news-card hover-scale">
+
+                <img src="assets/img/latest/latest_24_06_26.png" alt="News Placeholder">
+
+            </a>
 
             <a href="./games/game1/updates/demo-release.html" class="news-card news-card--featured hover-scale">
 
-                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+                <img src="assets/img/latest/latest_20_05_25.png" alt="News Placeholder">
 
             </a>
 
             <a href="./games/game1/updates/steam-page.html" class="news-card hover-scale">
 
-                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+                <img src="assets/img/latest/latest_27_04_25.png" alt="News Placeholder">
 
             </a>
 
-            <a href="./games/game2/updates/trailer.html" class="news-card hover-scale">
+            <a href="./games/game1/updates/steam-page.html" class="news-card hover-scale">
 
-                <img src="https://placehold.co/1200x675" alt="News Placeholder">
+                <img src="assets/img/latest/latest_09_04_25.png" alt="News Placeholder">
 
             </a>
-
         </section>
 
         <!-- =========================
@@ -111,8 +115,7 @@
 
             </a>
 
-            <a id="itchioLink" href="https://schokobanana-studios.itch.io/" target="_blank"
-                rel="noopener noreferrer">
+            <a id="itchioLink" href="https://schokobanana-studios.itch.io/" target="_blank" rel="noopener noreferrer">
 
                 <lottie-player id="itchioAnim" src="./assets/lottie/links/itchio-in.json" background="transparent"
                     speed="1">
@@ -129,9 +132,8 @@
 
     <footer>
 
-        <p>
-            © 2026 Schokobanana-Studios
-        </p>
+        <p>© 2026 Schokobanana-Studios, All rights reserved.</p>
+        <p>schokobanana.studios@gmail.com</p>
 
     </footer>
 

@@ -9,3 +9,27 @@
 .w-100 {
     width: 100%;
 }
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-dark-grey {
+    background-color: var(--clr-dark-grey);
+}
+
+.bg-sky-blue {
+    background-color: var(--clr-sky);
+}
+
+.bg-toa{
+    background-color: var(--clr-toa-grey);
+}
+
+.bg-skull-knight{
+    background-color: var(--clr-skull-knight-green);
+}
