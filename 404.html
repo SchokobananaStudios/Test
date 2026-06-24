@@ -11,26 +11,23 @@
     </script>
 
      <script>
-        const base = document.createElement("base");
+        const repo = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+            ? "/"
+            : "/Test/";
 
-        base.href =
-            location.hostname === "localhost" || location.hostname === "127.0.0.1"
-                ? "/"
-                : "/Test/";
-
-        document.head.appendChild(base);
+        document.write(`<base href="${repo}">`);
     </script>
 
-    <script src="./js/main.js" defer></script>
-    <script src="./js/lottie.js" defer></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/lottie.js" defer></script>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
 
     <main class="error-page">
 
-        <lottie-player id="errorAnim" src="./assets/lottie/bananus/bananus_404.json" background="transparent" speed="1"
+        <lottie-player id="errorAnim" src="/assets/lottie/bananus/bananus_404.json" background="transparent" speed="1"
             autoplay loop>
         </lottie-player>
 
@@ -42,7 +39,7 @@
             The page you're looking for doesn't exist.
         </p>
 
-        <a href="index.html">
+        <a href="/index.html">
             Return Home
         </a>
 
