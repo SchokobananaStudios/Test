@@ -1,0 +1,182 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schokobanana-Studios</title>
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
+
+    <script>
+        const repo = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+            ? "/"
+            : "/Test";
+
+        document.write(`<base href="${repo}">`);
+    </script>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/lottie.js" defer></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HERO
+========================== -->
+
+    <header class="hero">
+
+        <img src="/assets/img/banner.png" alt="Studio Banner" class="hero-banner">
+
+        <div class="hero-overlay">
+
+            <lottie-player id="bananusAnim" src="/assets/lottie/bananus/bananus_peace.json" background="transparent"
+                speed="1" autoplay>
+            </lottie-player>
+
+            <h1 class="hero-title">
+                Schokobanana-Studios
+            </h1>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <a href="/index.html">Home</a>
+
+        <a href="/games/games.html">Games</a>
+
+        <a href="/about.html">About</a>
+
+    </nav>
+
+    <main class="games-page" style="background-color: var(--clr-sky);">
+
+
+        <!-- =========================
+         ABOUT US
+    ========================== -->
+
+        <section class="about-us">
+
+            <h1>About Us</h1>
+
+            <p>
+                Schokobanana Studios is an independent game development studio
+                driven by a passion for creating memorable gaming experiences.
+                We enjoy experimenting with new ideas, building unique worlds,
+                and sharing our projects with players around the world.
+            </p>
+
+            <p>
+                From small prototypes to full releases, every project is an
+                opportunity to learn something new and improve our craft.
+                Whether it's programming, art, music, or storytelling, we strive
+                to create games that are fun, polished, and full of personality.
+            </p>
+
+        </section>
+
+        <section class="page-header">
+
+            <h1>Meet the Team</h1>
+
+            <p>
+                The people behind Schokobanana Studios.
+            </p>
+
+        </section>
+
+        <section class="games-grid">
+
+            <!-- Team Member -->
+
+            <section class="game-card hover-scale bg-white">
+
+                <img src="https://placehold.co/500x500" alt="Felix">
+
+                <div class="game-card-content">
+
+                    <h2>Felix</h2>
+
+                    <span class="status development">
+                        Programmer
+                    </span>
+
+                    <p>
+                        Gameplay programming, engine architecture,
+                        AI and tools.
+                    </p>
+
+                </div>
+
+            </section>
+
+             <!-- Team Member -->
+
+            <section class="game-card hover-scale bg-white">
+
+                <img src="https://placehold.co/500x500" alt="Felix">
+
+                <div class="game-card-content">
+
+                    <h2>Felix</h2>
+
+                    <span class="status development">
+                        Programmer
+                    </span>
+
+                    <p>
+                        Gameplay programming, engine architecture,
+                        AI and tools.
+                    </p>
+
+                </div>
+
+            </section>
+
+              <!-- Team Member -->
+
+            <section class="game-card hover-scale bg-white">
+
+                <img src="https://placehold.co/500x500" alt="Felix">
+
+                <div class="game-card-content">
+
+                    <h2>Felix</h2>
+
+                    <span class="status development">
+                        Programmer
+                    </span>
+
+                    <p>
+                        Gameplay programming, engine architecture,
+                        AI and tools.
+                    </p>
+
+                </div>
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+
+        © 2026 Schokobanana Studios
+
+    </footer>
+
+</body>
+
+</html>
