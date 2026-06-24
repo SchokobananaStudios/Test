@@ -7,14 +7,25 @@
 
     <title>Schokobanana-Studios</title>
 
-    <link rel="stylesheet" href="../../css/main.css">
-
     <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
-    <script src="../../js/main.js" defer></script>
-    <script src="../../js/lottie.js" defer></script>
+    <script>
+        const base = document.createElement("base");
+
+        base.href =
+            location.hostname === "localhost" || location.hostname === "127.0.0.1"
+                ? "/"
+                : "/Test/";
+
+        document.head.appendChild(base);
+    </script>
+
+    <script src="./js/main.js" defer></script>
+    <script src="./js/lottie.js" defer></script>
+
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
@@ -80,7 +91,8 @@
                     </span>
 
                     <p style="color: var(--clr-white);">
-                        Tribes of Areus is a mobile strategy and building game set in the stone age, where the player becomes a tribe
+                        Tribes of Areus is a mobile strategy and building game set in the stone age, where the player
+                        becomes a tribe
                         chieftain and has to expand his tribe. Explore the vast lands of Areus. Gather resources, master
                         new crafts, and tame wild creatures to build and strengthen your tribe. Hunt fierce beasts,
                         domesticate loyal companions, and uncover the secrets of a world brimming with danger and

@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Schokobanana-Studios - 404</title>
-
-    <link rel="stylesheet" href="./css/main.css">
-
     <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
+     <script>
+        const base = document.createElement("base");
+
+        base.href =
+            location.hostname === "localhost" || location.hostname === "127.0.0.1"
+                ? "/"
+                : "/Test/";
+
+        document.head.appendChild(base);
+    </script>
+
     <script src="./js/main.js" defer></script>
     <script src="./js/lottie.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
     <main class="error-page">
 
-        <lottie-player id="errorAnim" src="./assets/lottie/bananus/bananus_404.json" background="transparent"
-            speed="1" autoplay loop>
+        <lottie-player id="errorAnim" src="./assets/lottie/bananus/bananus_404.json" background="transparent" speed="1"
+            autoplay loop>
         </lottie-player>
 
         <h1>404</h1>

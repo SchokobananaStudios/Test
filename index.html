@@ -7,14 +7,26 @@
 
     <title>Schokobanana-Studios</title>
 
-    <link rel="stylesheet" href="./css/main.css">
-
     <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
+    <script>
+        const base = document.createElement("base");
+
+        base.href =
+            location.hostname === "localhost" || location.hostname === "127.0.0.1"
+                ? "/"
+                : "/Test/";
+
+        document.head.appendChild(base);
+    </script>
+
     <script src="./js/main.js" defer></script>
     <script src="./js/lottie.js" defer></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
@@ -29,8 +41,8 @@
 
         <div class="hero-overlay">
 
-            <lottie-player id="bananusAnim" src="./assets/lottie/bananus/bananus_sunglasses.json" background="transparent"
-                speed="1" autoplay>
+            <lottie-player id="bananusAnim" src="./assets/lottie/bananus/bananus_sunglasses.json"
+                background="transparent" speed="1" autoplay>
             </lottie-player>
 
             <h1 class="hero-title">
