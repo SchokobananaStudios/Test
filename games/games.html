@@ -11,10 +11,13 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
-   <script>
-        const repo = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+    <script>
+        const repo = location.hostname !== "schokobananastudios.github.io"
             ? "/"
             : "/Test/";
+
+        console.log(repo);
+        console.log("Host: " + location.host);
 
         document.write(`<base href="${repo}">`);
     </script>
@@ -37,8 +40,8 @@
 
         <div class="hero-overlay">
 
-            <lottie-player id="bananusAnim" src="../assets/lottie/bananus/bananus_peace.json"
-                background="transparent" speed="1" autoplay>
+            <lottie-player id="bananusAnim" src="../assets/lottie/bananus/bananus_peace.json" background="transparent"
+                speed="1" autoplay>
             </lottie-player>
 
             <h1 class="hero-title">
@@ -53,7 +56,7 @@
          NAVIGATION
     ========================== -->
 
-      <nav class="navbar">
+    <nav class="navbar">
 
         <a href="index.html">Home</a>
 

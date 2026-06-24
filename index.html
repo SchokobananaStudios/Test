@@ -12,9 +12,12 @@
     </script>
 
    <script>
-        const repo = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+        const repo = location.hostname !== "schokobananastudios.github.io"
             ? "/"
             : "/Test/";
+
+        console.log(repo);
+        console.log("Host: " + location.host);
 
         document.write(`<base href="${repo}">`);
     </script>
