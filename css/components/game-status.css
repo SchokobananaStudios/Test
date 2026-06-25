@@ -41,3 +41,8 @@
     color: white;
 
 }
+
+.status.bugfixing {
+    background: #992323;
+    color: white;
+}

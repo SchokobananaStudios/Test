@@ -10,27 +10,16 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
-    <script>
-        const repo = location.hostname !== "schokobananastudios.github.io"
-            ? "/"
-            : "/Test/";
-
-        console.log(repo);
-        console.log("Host: " + location.host);
-
-        document.write(`<base href="${repo}">`);
-    </script>
-
-    <script src="js/main.js" defer></script>
-    <script src="js/lottie.js" defer></script>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="/Test/js/main.js" defer></script>
+    <script src="/Test/js/lottie.js" defer></script>
+    <link rel="stylesheet" href="/Test/css/main.css">
 </head>
 
 <body>
 
     <main class="error-page">
 
-        <lottie-player id="errorAnim" src="assets/lottie/bananus/bananus_404.json" background="transparent" speed="1"
+        <lottie-player id="errorAnim" src="/Test/assets/lottie/bananus/bananus_404.json" background="transparent" speed="1"
             autoplay loop>
         </lottie-player>
 

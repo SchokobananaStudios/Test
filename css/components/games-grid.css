@@ -15,7 +15,10 @@
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
 
+    justify-content: center;
+
     gap: var(--space-xl);
+
     padding: var(--space-xl);
 
 }

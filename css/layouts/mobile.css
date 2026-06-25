@@ -38,7 +38,6 @@
 
         color: var(--clr-banana-yellow1);
 
-        font-family: var(--font-body);
         font-size: clamp(var(--fs-lg), 7vw, var(--fs-xxl));
 
         white-space: nowrap;
@@ -46,4 +45,7 @@
         -webkit-text-stroke: 0px var(--clr-outline-brown);
     }
 
+    .social-links {
+        display: flex;
+    }
 }

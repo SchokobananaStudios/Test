@@ -11,21 +11,10 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
-   <script>
-        const repo = location.hostname !== "schokobananastudios.github.io"
-            ? "/"
-            : "/Test/";
+    <script src="/Test/js/main.js" defer></script>
+    <script src="/Test/js/lottie.js" defer></script>
 
-        console.log(repo);
-        console.log("Host: " + location.host);
-
-        document.write(`<base href="${repo}">`);
-    </script>
-
-    <script src="js/main.js" defer></script>
-    <script src="js/lottie.js" defer></script>
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/Test/css/main.css">
 
 </head>
 
@@ -37,12 +26,12 @@
 
     <header class="hero">
 
-        <img src="assets/img/banner.png" alt="Studio Banner" class="hero-banner">
+        <img src="/Test/assets/img/banner.png" alt="Studio Banner" class="hero-banner">
 
         <div class="hero-overlay">
 
-            <lottie-player id="bananusAnim" src="assets/lottie/bananus/bananus_sunglasses.json"
-                background="transparent" speed="1" autoplay>
+            <lottie-player id="bananusAnim" src="/Test/assets/lottie/bananus/bananus_sunglasses.json" background="transparent"
+                speed="1" autoplay>
             </lottie-player>
 
             <h1 class="hero-title">
@@ -59,11 +48,11 @@
 
     <nav class="navbar">
 
-        <a href="index.html">Home</a>
+        <a href="/Test/index.html">Home</a>
 
-        <a href="games/games.html">Games</a>
+        <a href="/Test/games.html">Games</a>
 
-        <a href="about.html">About</a>
+        <a href="/Test/about.html">About</a>
 
     </nav>
 
@@ -79,27 +68,33 @@
 
         <section class="news-feed">
 
-            <a href="/games/game1/updates/steam-page.html" class="news-card hover-scale">
+            <h1 class="title center">
+                Latest News
+            </h1>
 
-                <img src="assets/img/latest/latest_24_06_26.png" alt="News Placeholder">
+            <!--TODO: href-->
+            <a class="news-card hover-scale">
 
-            </a>
-
-            <a href="/games/game1/updates/demo-release.html" class="news-card news-card--featured hover-scale">
-
-                <img src="assets/img/latest/latest_20_05_25.png" alt="News Placeholder">
-
-            </a>
-
-            <a href="/games/game1/updates/steam-page.html" class="news-card hover-scale">
-
-                <img src="assets/img/latest/latest_27_04_25.png" alt="News Placeholder">
+                <img src="/Test/assets/img/latest/latest_24_06_26.png" alt="News Placeholder">
 
             </a>
 
-            <a href="/games/game1/updates/steam-page.html" class="news-card hover-scale">
+            <a href="https://schokobananastudios.github.io/Skull-Knight/news.html"
+                class="news-card news-card--featured hover-scale">
 
-                <img src="assets/img/latest/latest_09_04_25.png" alt="News Placeholder">
+                <img src="/Test/assets/img/latest/latest_20_05_25.png" alt="Latest News May 20, 2025">
+
+            </a>
+
+            <a href="https://schokobananastudios.github.io/Skull-Knight/news.html" class="news-card hover-scale">
+
+                <img src="/Test/assets/img/latest/latest_27_04_25.png" alt="Latest News April 27, 2025">
+
+            </a>
+
+            <a href="https://schokobananastudios.github.io/Skull-Knight/news.html" class="news-card hover-scale">
+
+                <img src="/Test/assets/img/latest/latest_09_04_25.png" alt="Latest News April 9, 2025">
 
             </a>
         </section>
@@ -112,7 +107,7 @@
 
             <a id="discordLink" href="https://discord.gg/pjwB3BZM4F" target="_blank" rel="noopener noreferrer">
 
-                <lottie-player id="discordAnim" src="assets/lottie/links/discord-in.json" background="transparent"
+                <lottie-player id="discordAnim" src="/Test/assets/lottie/links/discord-in.json" background="transparent"
                     speed="1">
                 </lottie-player>
 
@@ -121,7 +116,7 @@
             <a id="youtubeLink" href="https://www.youtube.com/@Schokobanana-Studios" target="_blank"
                 rel="noopener noreferrer">
 
-                <lottie-player id="youtubeAnim" src="assets/lottie/links/youtube-in.json" background="transparent"
+                <lottie-player id="youtubeAnim" src="/Test/assets/lottie/links/youtube-in.json" background="transparent"
                     speed="1">
                 </lottie-player>
 
@@ -129,7 +124,7 @@
 
             <a id="itchioLink" href="https://schokobanana-studios.itch.io/" target="_blank" rel="noopener noreferrer">
 
-                <lottie-player id="itchioAnim" src="assets/lottie/links/itchio-in.json" background="transparent"
+                <lottie-player id="itchioAnim" src="/Test/assets/lottie/links/itchio-in.json" background="transparent"
                     speed="1">
                 </lottie-player>
 

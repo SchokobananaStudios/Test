@@ -11,21 +11,10 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     </script>
 
-   <script>
-        const repo = location.hostname !== "schokobananastudios.github.io"
-            ? "/"
-            : "/Test/";
+    <script src="/Test/js/main.js" defer></script>
+    <script src="/Test/js/lottie.js" defer></script>
 
-        console.log(repo);
-        console.log("Host: " + location.host);
-
-        document.write(`<base href="${repo}">`);
-    </script>
-
-    <script src="js/main.js" defer></script>
-    <script src="js/lottie.js" defer></script>
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/Test/css/main.css">
 </head>
 
 <body>
@@ -36,13 +25,12 @@
 
     <header class="hero">
 
-        <img src="assets/img/banner.png" alt="Studio Banner" class="hero-banner">
+        <img src="/Test/assets/img/banner.png" alt="Studio Banner" class="hero-banner">
 
         <div class="hero-overlay">
 
-            <lottie-player id="bananusAnim" src="assets/lottie/bananus/bananus_peace.json" background="transparent"
+            <lottie-player id="bananusAnim" src="/Test/assets/lottie/bananus/bananus_peace.json" background="transparent"
                 speed="1" autoplay>
-            </lottie-player>
 
             <h1 class="hero-title">
                 Schokobanana-Studios
@@ -56,13 +44,13 @@
          NAVIGATION
     ========================== -->
 
-      <nav class="navbar">
+    <nav class="navbar">
 
-        <a href="index.html">Home</a>
+        <a href="/Test/index.html">Home</a>
 
-        <a href="games/games.html">Games</a>
+        <a href="/Test/games.html">Games</a>
 
-        <a href="about.html">About</a>
+        <a href="/Test/about.html">About</a>
 
     </nav>
 
@@ -97,10 +85,6 @@
 
             <h1>Meet the Team</h1>
 
-            <p>
-                The people behind Schokobanana Studios.
-            </p>
-
         </section>
 
         <section class="games-grid">
@@ -109,65 +93,62 @@
 
             <section class="game-card hover-scale bg-white">
 
-                <img src="https://placehold.co/500x500" alt="Felix">
+                <img src="/assets/img/profile-default-img.png" alt="Felix">
 
                 <div class="game-card-content">
 
-                    <h2>Felix</h2>
+                    <h2>Dev 1</h2>
 
                     <span class="status development">
-                        Programmer
+                        OG
                     </span>
 
                     <p>
-                        Gameplay programming, engine architecture,
-                        AI and tools.
+                        Description
                     </p>
 
                 </div>
 
             </section>
 
-             <!-- Team Member -->
+            <!-- Team Member -->
 
             <section class="game-card hover-scale bg-white">
 
-                <img src="https://placehold.co/500x500" alt="Felix">
+                <img src="/assets/img/profile-default-img.png" alt="Felix">
 
                 <div class="game-card-content">
 
-                    <h2>Felix</h2>
+                    <h2>Dev 2</h2>
 
-                    <span class="status development">
-                        Programmer
+                    <span class="status prototype">
+                        Artist
                     </span>
 
                     <p>
-                        Gameplay programming, engine architecture,
-                        AI and tools.
+                        Description
                     </p>
 
                 </div>
 
             </section>
 
-              <!-- Team Member -->
+            <!-- Team Member -->
 
             <section class="game-card hover-scale bg-white">
 
-                <img src="https://placehold.co/500x500" alt="Felix">
+                <img src="/assets/img/profile-default-img.png" alt="Felix">
 
                 <div class="game-card-content">
 
-                    <h2>Felix</h2>
+                    <h2>Dev 3</h2>
 
-                    <span class="status development">
+                    <span class="status bugfixing">
                         Programmer
                     </span>
 
                     <p>
-                        Gameplay programming, engine architecture,
-                        AI and tools.
+                        Description
                     </p>
 
                 </div>

@@ -14,6 +14,11 @@
     background-color: white;
 }
 
+.title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-lg);
+}
+
 .bg-black {
     background-color: black;
 }
