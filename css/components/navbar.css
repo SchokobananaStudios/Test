@@ -28,5 +28,12 @@
     padding: var(--space-md);
     border-radius: var(--radius-md);
 
+    border: 3px solid black;
     min-width: 10%;
+}
+
+.navbar a:hover {
+    background-color: var(--clr-sky);
+    color:black;
+    border: 3px solid black;
 }

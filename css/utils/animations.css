@@ -9,3 +9,39 @@
     transform: scale(1.02);
 
 }
+
+.shiny-text {
+
+    font-weight: bold;
+
+    background: linear-gradient(120deg,
+            var(--clr-banana-yellow1) 0%,
+            var(--clr-banana-yellow1) 40%,
+            white 50%,
+            var(--clr-banana-yellow1) 60%,
+            var(--clr-banana-yellow1)100%);
+
+    background-size:300% 100%;
+    background-position: 300% center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.shiny-text:hover{
+      animation: shine 2s normal infinite;
+}
+
+@keyframes shine {
+
+    from {
+        background-position: 300% center;
+    }
+
+    to {
+        background-position: 150% center;
+    }
+
+}
