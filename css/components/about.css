@@ -21,3 +21,10 @@
     font-size: var(--fs-lg);
 
 }
+
+.about-page {
+
+    margin-inline: auto;
+
+    padding: var(--space-xl);
+}
