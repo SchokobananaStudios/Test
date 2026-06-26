@@ -47,5 +47,10 @@
 
     .social-links {
         display: flex;
+        padding: 2rem;
+    }
+
+    .news-card {
+        width: 100%;
     }
 }
